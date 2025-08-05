@@ -11,3 +11,10 @@ src/main/original/XDB/*
 # Keep structure
 !src/main/original/STU/.gitkeep
 !src/main/original/XDB/.gitkeep
+!exports/current/.gitkeep
+!exports/backup/.gitkeep
+
+# VS Code settings
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json

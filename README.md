@@ -1,32 +1,33 @@
 # PLC Project Version Control
 
-## Project Structure
+## Directory Structure
 - `src/`
   - `main/original/`
     - `STU/` - Control Expert project files
     - `XDB/` - Database files
-    - `XEF/` - Binary export files
+  - `lib/` - Reusable function blocks
 - `exports/`
   - `current/` - Latest XEF exports
   - `backup/` - Dated backups (YYYY-MM-DD)
 - `docs/`
   - `procedures/` - Export procedures
+  - `specifications/` - Project specs
   - `standards/` - Coding standards
+- `.github/workflows/` - CI/CD configurations
 
-## Version Control Guidelines
-1. Export FBD code as text before committing
-2. Include descriptive commit messages
-3. Document major changes in docs folder
-4. Use feature branches for development
-5. Tag production releases
+## File Placement Guide
+1. Control Expert Files:
+   - Place `.STU` files in: `src/main/original/STU/`
+   - Place `.XDB` files in: `src/main/original/XDB/`
+   - Export `.XEF` files to: `exports/current/`
 
-## Export Procedure
-1. Open Control Expert
-2. Export FBD as text
-3. Save to `exports/current` directory
-4. Backup to `exports/backup/YYYY-MM-DD/`
+## Version Control Steps
+1. Export project from Control Expert as `.XEF`
+2. Save to `exports/current/`
+3. Create dated backup in `exports/backup/YYYY-MM-DD/`
+4. Commit and push changes
 
-## Tools Used
-- Control Expert (Unity Pro)
-- Git version control
-- VS Code editor
+## Important Notes
+- Binary files (`.STU`, `.XDB`) are ignored by Git
+- Only `.XEF` files in `exports/` are tracked
+- Use meaningful commit messages
