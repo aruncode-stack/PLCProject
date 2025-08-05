@@ -6,16 +6,18 @@
 *.PRJ
 *.XDB
 
-# Allow XEF exports
-!src/main/original/exports/*.XEF
-
 # Project directories
 src/main/original/STU/*
 src/main/original/XDB/*
 src/main/original/XEF/*
-!src/main/original/exports/*.XEF
+
+# Allow XEF exports
+!src/main/original/exports/current/*.XEF
+!src/main/original/exports/backup/*/*.XEF
 
 # Keep directory structure
 !src/main/original/STU/.gitkeep
 !src/main/original/XDB/.gitkeep
 !src/main/original/XEF/.gitkeep
+!src/main/original/exports/current/.gitkeep
+!src/main/original/exports/backup/.gitkeep
