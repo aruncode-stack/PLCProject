@@ -5,31 +5,16 @@
 *.STU
 *.XEF
 *.PRJ
-!*.XEF.txt
-!*.PRJ.txt
+*.XDB
+!*.txt
 
-# Additional PLC files
-*.ZEF
-*.STA
-*.RTD
-*.RED
-*.PXF
-*.ATB
-*.WED
+# Project directories
+src/main/original/STU/*
+src/main/original/XDB/*
+src/main/original/XEF/*
+!src/main/original/exports/*.txt
 
-# Log files
-*.log
-logs/
-
-# VS Code settings
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-
-# Exports directory
-exports/*
-exports/backup/*
-exports/current/*
-!exports/.gitkeep
-!exports/backup/.gitkeep
-!exports/current/.gitkeep
+# Keep directory structure
+!src/main/original/STU/.gitkeep
+!src/main/original/XDB/.gitkeep
+!src/main/original/XEF/.gitkeep
