@@ -1,13 +1,15 @@
 # PLC Project Version Control
 
 ## Project Structure
-- `src/` - FBD source files
-  - `main/` - Main program blocks
-  - `lib/` - Reusable function blocks
-- `exports/` - Exported text versions
-  - `backup/` - Dated backups
-  - `current/` - Latest exports
-- `docs/` - Documentation
+- `src/`
+  - `main/original/`
+    - `STU/` - Control Expert project files
+    - `XDB/` - Database files
+    - `XEF/` - Binary export files
+- `exports/`
+  - `current/` - Latest XEF exports
+  - `backup/` - Dated backups (YYYY-MM-DD)
+- `docs/`
   - `procedures/` - Export procedures
   - `standards/` - Coding standards
 
