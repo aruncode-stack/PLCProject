@@ -1,0 +1,14 @@
+# Schneider Electric PLC files
+*.bak
+*.tmp
+*.~*
+*.STU
+*.XEF
+*.PRJ
+!*.XEF.txt
+!*.PRJ.txt
+
+# VS Code settings
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
